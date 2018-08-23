@@ -17,6 +17,9 @@
 		1827A429212E8C58008A88FF /* BasePackageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A428212E8C58008A88FF /* BasePackageUITests.m */; };
 		1827A43A212E8C8E008A88FF /* SSTTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A439212E8C8E008A88FF /* SSTTableView.m */; };
 		1827A43E212E8CCC008A88FF /* PublicButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A43C212E8CCC008A88FF /* PublicButton.m */; };
+		1827A44A212EA092008A88FF /* SSTNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A444212EA090008A88FF /* SSTNavigationViewController.m */; };
+		1827A44B212EA092008A88FF /* SStBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A446212EA091008A88FF /* SStBaseViewController.m */; };
+		1827A44C212EA092008A88FF /* SSTTabBarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1827A448212EA092008A88FF /* SSTTabBarViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,14 @@
 		1827A439212E8C8E008A88FF /* SSTTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTTableView.m; sourceTree = "<group>"; };
 		1827A43C212E8CCC008A88FF /* PublicButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PublicButton.m; sourceTree = "<group>"; };
 		1827A43D212E8CCC008A88FF /* PublicButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PublicButton.h; sourceTree = "<group>"; };
+		1827A444212EA090008A88FF /* SSTNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTNavigationViewController.m; sourceTree = "<group>"; };
+		1827A445212EA091008A88FF /* SStBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SStBaseViewController.h; sourceTree = "<group>"; };
+		1827A446212EA091008A88FF /* SStBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SStBaseViewController.m; sourceTree = "<group>"; };
+		1827A447212EA091008A88FF /* SSTTabBarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTTabBarViewController.h; sourceTree = "<group>"; };
+		1827A448212EA092008A88FF /* SSTTabBarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSTTabBarViewController.m; sourceTree = "<group>"; };
+		1827A449212EA092008A88FF /* SSTNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSTNavigationViewController.h; sourceTree = "<group>"; };
+		1827A44E212EA100008A88FF /* General.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = General.h; sourceTree = "<group>"; };
+		1827A44F212EA100008A88FF /* Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +118,8 @@
 		1827A403212E8C57008A88FF /* BasePackage */ = {
 			isa = PBXGroup;
 			children = (
+				1827A44D212EA0F1008A88FF /* Header */,
+				1827A443212EA07A008A88FF /* BaseController */,
 				1827A436212E8C6C008A88FF /* BaseView */,
 				1827A404212E8C57008A88FF /* AppDelegate.h */,
 				1827A405212E8C57008A88FF /* AppDelegate.m */,
@@ -164,6 +177,28 @@
 				1827A43C212E8CCC008A88FF /* PublicButton.m */,
 			);
 			path = button;
+			sourceTree = "<group>";
+		};
+		1827A443212EA07A008A88FF /* BaseController */ = {
+			isa = PBXGroup;
+			children = (
+				1827A449212EA092008A88FF /* SSTNavigationViewController.h */,
+				1827A444212EA090008A88FF /* SSTNavigationViewController.m */,
+				1827A445212EA091008A88FF /* SStBaseViewController.h */,
+				1827A446212EA091008A88FF /* SStBaseViewController.m */,
+				1827A447212EA091008A88FF /* SSTTabBarViewController.h */,
+				1827A448212EA092008A88FF /* SSTTabBarViewController.m */,
+			);
+			path = BaseController;
+			sourceTree = "<group>";
+		};
+		1827A44D212EA0F1008A88FF /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				1827A44E212EA100008A88FF /* General.h */,
+				1827A44F212EA100008A88FF /* Header.h */,
+			);
+			path = Header;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,10 +335,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				1827A409212E8C57008A88FF /* ViewController.m in Sources */,
+				1827A44C212EA092008A88FF /* SSTTabBarViewController.m in Sources */,
 				1827A414212E8C57008A88FF /* main.m in Sources */,
+				1827A44B212EA092008A88FF /* SStBaseViewController.m in Sources */,
 				1827A43A212E8C8E008A88FF /* SSTTableView.m in Sources */,
 				1827A43E212E8CCC008A88FF /* PublicButton.m in Sources */,
 				1827A406212E8C57008A88FF /* AppDelegate.m in Sources */,
+				1827A44A212EA092008A88FF /* SSTNavigationViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
